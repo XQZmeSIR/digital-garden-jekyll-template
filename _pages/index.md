@@ -17,7 +17,6 @@ Most of the input that I consume goes through Obsidian or my Analog Zettelkasten
   Take a look at <span style="font-weight: bold">[[Your first note]]</span> to get started on your exploration.
 </p>
 
-
 <strong>Recently updated notes</strong>
 
 <ul>
