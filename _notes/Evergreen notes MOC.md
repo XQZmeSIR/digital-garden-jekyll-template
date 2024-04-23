@@ -1,4 +1,5 @@
 up:: [[Home]]
+
 tags:: #🗺️  #on/PKM 
 
 ## Explore how evergreen notes work
