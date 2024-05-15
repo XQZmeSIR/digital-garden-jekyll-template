@@ -12,3 +12,4 @@ tags:
 - [[5,2 Generation effect]]
 - [[5,1 Internalization of knowledge]]
 - [[The Michelangelo Effect]]
+- [[Why input hypothesis works?]]
