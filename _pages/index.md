@@ -28,9 +28,13 @@ Most of the input that I consume goes through Obsidian or my Analog Zettelkasten
 <ul>
   {% assign recent_notes = site.notes | sort: "last_modified_at_timestamp" | reverse %}
 <<<<<<< HEAD
+<<<<<<< HEAD
   {% for note in recent_notes limit: 30 %}
 =======
   {% for note in recent_notes limit: 10 %}
+>>>>>>> main
+=======
+  {% for note in recent_notes limit: 30 %}
 >>>>>>> main
     <li>
       {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
