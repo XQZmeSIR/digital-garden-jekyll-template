@@ -12,8 +12,8 @@
     --text-color: #ffcc99;
     --link-color: #ffe0ac;
     --visited-color: #bc8d6b;
-    --code-background-color: #bc8d6b;
-    --code-color: #222129;
+    --code-background-color: #a56c44;
+    --code-color: #5d5c63;
     --blockquote-color: #222;
 }
 
@@ -94,25 +94,12 @@ code {
   background-color: var(--code-background-color);
   color: var(--code-color);
   font-family: var(--font-monospace) !important;
+  font
   padding: 2px 4px;
   border-radius: 3px;
 }
 
-pre {
-  background-color: var(--code-background-color);
-  color: var(--code-color);
-  font-family: var(--font-monospace) !important;
-  padding: 15px;
-  border-radius: 5px;
-  overflow-x: auto;
-  margin-bottom: 1.6em;
-}
 
-pre code {
-  background-color: transparent;
-  padding: 0;
-  border-radius: 0;
-}
 
 
 blockquote {
