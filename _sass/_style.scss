@@ -1,26 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
+
+
 :root {
-    --width: 850px;
-    --font-main: 'Rubik';
+	--width: 870px;
+	--font-main: 'Rubik';
     --font-secondary: 'Rubik';
-  	--font-monospace: 'JetBrains Mono', monospace;
-    --font-scale: 1em;
-    --background-color: #222129;
-    --heading-color: #ffe0ac;
-    --text-color: #ffcc99;
-    --link-color: #ffe0ac;
-    --visited-color: #bc8d6b;
-    --code-background-color: #a56c44;
-    --code-color: #5d5c63;
-    --blockquote-color: #222;
+    --font-scale: 1.1em;
+    --font-monospace: 'JetBrains Mono', monospace
+	--background-color: #0d1117;
+	--heading-color: #e3e9f0;
+	--text-color: #c9d1d9;
+	--link-color: #e3bc5e;
+	--visited-color: #dfcc9e;
+	--code-background-color: #000;
+	--code-color: #c9d1d9;
+	--blockquote-color: #c9d1d9;
 }
 
 body {
     font-family: var(--font-secondary);
     font-size: var(--font-scale);
-    margin: auto;
+    margin: 50px auto;
     padding: 20px;
     max-width: var(--width);
     text-align: justify;
@@ -31,45 +33,52 @@ body {
     color: var(--text-color);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: var(--font-main);
+h1, h2, h3, h4, h5, h6 {
+  	font-family: var(--font-main);
     color: var(--heading-color);
+}
+
+strong, b {
+  	color: var(--heading-color);
 }
 
 a {
     color: var(--link-color);
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+     text-decoration: underline; 
 }
 
-main {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    padding: 30px;
-    border: 1px solid var(--link-color);
+nav {
+  	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.5);
+	display: flex;
+	align-items: center;
+	width: 100%;
+  	height: 80px;
+	z-index: 999;
+	backdrop-filter: blur(5px);
+  	-webkit-backdrop-filter: blur(5px);
+}
+
+nav p {
+ 	width: 50rem;
+	padding: 0 20px;
+	margin: 0 auto;
 }
 
 nav a {
-    margin-right: 8px;
-}
-
-strong,
-b {
-    color: var(--heading-color);
+    margin-right: 15px;
+  	font-size: 0.9em;
 }
 
 button {
     margin: 0;
-    cursor: pointer;
 }
 
 main {
@@ -89,46 +98,39 @@ img {
     max-width: 100%;
 }
 
-
 code {
-  background-color: var(--code-background-color);
-  color: var(--code-color);
-  font-family: var(--font-monospace) !important;
-  font
-  padding: 2px 4px;
-  border-radius: 3px;
+    font-family: 'JetBrains Mono', monospace;
+    padding: 2px;
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    border-radius: 3px;
 }
 
-
-
-
 blockquote {
-    border-top: 1px solid var(--heading-color);
-    border-bottom: 1px solid var(--heading-color);
-    color: var(--text-color);
-    padding: 20px;
+    border-left: 1px solid #999;
+    color: var(--code-color);
+    padding-left: 20px;
     font-style: italic;
-    margin-left: 0px;
-    margin-right: 0px;
 }
 
 footer {
     padding: 25px 0;
     text-align: center;
-    opacity: 0.6;
 }
 
-.title:hover {
+button {
+	border: 0;
+  	background-color: inherit;
+  	text-decoration: underline;
+  	color: var(--heading-color);
+}
+
+.title {
     text-decoration: none;
 }
 
 .title h1 {
-    font-size: 1em;
-    padding: 5px 10px;
-    background: var(--heading-color);
-    color: var(--background-color);
-    display: inline-block;
-    font-weight: 400;
+    color: var(--link-color);
 }
 
 .inline {
@@ -146,11 +148,6 @@ footer {
     overflow-x: auto;
 }
 
-
-.highlight {
-    border-left: 5px solid var(--heading-color);
-}
-
 /* blog post list */
 ul.blog-posts {
     list-style-type: none;
@@ -159,13 +156,6 @@ ul.blog-posts {
 
 ul.blog-posts li {
     display: flex;
-    margin-bottom: 20px;
-}
-
-
-
-ul.blog-posts li time {
-    font-style: normal;
 }
 
 ul.blog-posts li span {
@@ -174,31 +164,4 @@ ul.blog-posts li span {
 
 ul.blog-posts li a:visited {
     color: var(--visited-color);
-}
-
-table {
-    border-collapse: collapse;
-}
-
-table,
-th,
-td {
-    border: 1px dashed var(--heading-color);
-    padding: 10px;
-}
-
-@media only screen and (max-width:767px) {
-    main {
-        padding: 20px;
-        margin-top: 30px;
-        margin-bottom: 10px;
-    }
-
-    ul.blog-posts li {
-        flex-direction: column;
-    }
-
-    ul.blog-posts li span {
-        flex: unset;
-    }
 }
