@@ -4,6 +4,7 @@
 :root {
     --width: 850px;
     --font-main: 'Rubik';
+    --font-secondary: 'Rubik';
   	--font-monospace: 'JetBrains Mono', monospace;
     --font-scale: 1em;
     --background-color: #222129;
@@ -88,29 +89,13 @@ img {
     max-width: 100%;
 }
 
-pre {
-  background-color: var(--code-background-color);
-  color: var(--code-color);
-  padding: 15px;
-  border-radius: 5px;
-  overflow-x: auto;
-  font-family: 'JetBrains Mono';
-  line-height: 1.6;
-  margin-bottom: 1.6em;
-}
 
 code {
   background-color: var(--code-background-color);
   color: var(--code-color);
-  font-family: 'JetBrains Mono';
+  font-family: var(--font-monospace);
   padding: 2px 4px;
   border-radius: 3px;
-}
-
-pre code {
-  background-color: var(--code-background-color);
-  color: var(--code-color);
-  font-family: 'JetBrains Mono';
 }
 
 
