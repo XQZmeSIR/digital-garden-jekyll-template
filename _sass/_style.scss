@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
-
-
-
 :root {
     --width: 720px;
     --font-main: 'Rubik';
@@ -31,6 +28,7 @@ body {
     overflow-wrap: break-word;
     line-height: 1.6;
     color: var(--text-color);
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-main);
@@ -138,3 +136,4 @@ ul.blog-posts li span {
 ul.blog-posts li a:visited {
     color: var(--visited-color);
 }
+
