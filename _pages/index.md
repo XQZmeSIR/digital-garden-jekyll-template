@@ -13,6 +13,8 @@ Most of the input that I consume goes through Obsidian or my Analog Zettelkasten
 
 [[Evergreen notes moc|Start here]] to find out more about Evergreen notes.
 
+Also check out my guide: [[Как настроить Zotero Integration plugin в Obsidian раз и навсегда]]
+
 Maps of Content 🗺️: <br>
 - [[Mini-Essays MOC]]
 - [[Memory MOC]]
