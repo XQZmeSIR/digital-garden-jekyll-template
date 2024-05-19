@@ -93,9 +93,25 @@ img {
 code {
   background-color: var(--code-background-color);
   color: var(--code-color);
-  font-family: var(--font-monospace);
+  font-family: var(--font-monospace) !important;
   padding: 2px 4px;
   border-radius: 3px;
+}
+
+pre {
+  background-color: var(--code-background-color);
+  color: var(--code-color);
+  font-family: var(--font-monospace) !important;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin-bottom: 1.6em;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
 }
 
 
