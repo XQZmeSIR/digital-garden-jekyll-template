@@ -21,7 +21,6 @@ embed_tweets: false
 permalink:           pretty
 relative_permalinks: false
 
-theme: jekyll-theme-chirpy
 
 
 plugins:
