@@ -3,26 +3,26 @@
 
 
 
+
 :root {
-	--width: 870px;
-	--font-main: 'Rubik';
+    --width: 720px;
+    --font-main: 'Rubik';
     --font-secondary: 'Rubik';
     --font-scale: 1.1em;
-    --font-monospace: 'JetBrains Mono', monospace
-	--background-color: #0d1117;
-	--heading-color: #e3e9f0;
-	--text-color: #c9d1d9;
-	--link-color: #e3bc5e;
-	--visited-color: #dfcc9e;
-	--code-background-color: #000;
-	--code-color: #c9d1d9;
-	--blockquote-color: #c9d1d9;
+    --background-color: #120c0e;
+    --heading-color: #d9d8dc;
+    --text-color: #d9d8dc;
+    --link-color: #eb99a1;
+    --visited-color:  #e26f7a;
+    --code-background-color: #40363a;
+    --code-color: #d9d8dc;
+    --blockquote-color: #d9d8dc;
 }
 
 body {
     font-family: var(--font-secondary);
     font-size: var(--font-scale);
-    margin: 50px auto;
+    margin: auto;
     padding: 20px;
     max-width: var(--width);
     text-align: justify;
@@ -31,15 +31,10 @@ body {
     overflow-wrap: break-word;
     line-height: 1.6;
     color: var(--text-color);
-}
 
 h1, h2, h3, h4, h5, h6 {
-  	font-family: var(--font-main);
+    font-family: var(--font-main);
     color: var(--heading-color);
-}
-
-strong, b {
-  	color: var(--heading-color);
 }
 
 a {
@@ -49,36 +44,20 @@ a {
 }
 
 a:hover {
-     text-decoration: underline; 
-}
-
-nav {
-  	position: fixed;
-	top: 0;
-	left: 0;
-	background: rgba(0,0,0,.5);
-	display: flex;
-	align-items: center;
-	width: 100%;
-  	height: 80px;
-	z-index: 999;
-	backdrop-filter: blur(5px);
-  	-webkit-backdrop-filter: blur(5px);
-}
-
-nav p {
- 	width: 50rem;
-	padding: 0 20px;
-	margin: 0 auto;
+	color: var(--visited-color);
 }
 
 nav a {
-    margin-right: 15px;
-  	font-size: 0.9em;
+    margin-right: 8px;
+}
+
+strong, b {
+    color: var(--heading-color);
 }
 
 button {
     margin: 0;
+    cursor: pointer;
 }
 
 main {
@@ -91,7 +70,7 @@ table {
 
 hr {
     border: 0;
-    border-top: 1px dashed;
+    border-top: 1px solid var(--link-color);
 }
 
 img {
@@ -99,18 +78,20 @@ img {
 }
 
 code {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: monospace;
     padding: 2px;
     background-color: var(--code-background-color);
     color: var(--code-color);
-    border-radius: 3px;
 }
 
 blockquote {
-    border-left: 1px solid #999;
+    border-left: 5px solid var(--link-color);
+  	padding: 0 15px;
+  	margin: 15px 0;
+  	line-height: 50px;
+  	font-size: 16px;
+  	background-color: var(--code-background-color);
     color: var(--code-color);
-    padding-left: 20px;
-    font-style: italic;
 }
 
 footer {
@@ -118,27 +99,19 @@ footer {
     text-align: center;
 }
 
-button {
-	border: 0;
-  	background-color: inherit;
-  	text-decoration: underline;
-  	color: var(--heading-color);
-}
-
-.title {
-    text-decoration: none;
-}
-
 .title h1 {
-    color: var(--link-color);
+ 	color: var(--link-color); 
+}
+
+.title h1:hover {
+  	color: var(--visited-color);
 }
 
 .inline {
     width: auto !important;
 }
 
-.highlight,
-.code {
+.highlight, .code {
     padding: 1px 15px;
     background-color: var(--code-background-color);
     color: var(--code-color);
@@ -159,7 +132,7 @@ ul.blog-posts li {
 }
 
 ul.blog-posts li span {
-    flex: 0 0 130px;
+ 	width: 150px; 
 }
 
 ul.blog-posts li a:visited {
