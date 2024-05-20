@@ -79,7 +79,8 @@ h6 {
 }
 
 ul, ol {
-  --list-spacing: 4px !important;
+  --list-spacing: 10px;
+  margin-bottom: var(--list-spacing);
 }
 
 
