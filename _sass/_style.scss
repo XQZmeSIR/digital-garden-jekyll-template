@@ -8,6 +8,10 @@ $color-box-background: mix($color-primary, white, 4%);
 $border-radius: 4px;
 $font-family: 'Rubik';
 
+:root {
+  --list-spacing: 5px;
+}
+
 body {
   box-sizing: content-box;
   font-family: $font-family;
@@ -77,12 +81,6 @@ h6 {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-
-ul, ol {
-  --list-spacing: 10px;
-  margin-bottom: var(--list-spacing);
-}
-
 
 a {
   transition: background 300ms;
